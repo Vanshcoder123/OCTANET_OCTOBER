@@ -1,0 +1,165 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #00072D;
+    color: #A6E1FA;
+    font-family: 'Pixelify Sans', cursive;
+    font-family: 'Roboto', sans-serif;
+    padding: 20px;
+
+
+}
+
+h1 {
+    text-align: center;
+    text-decoration: underline dashed #0E6BA8;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    height: 600px;
+    border: 5px solid #A6E1FA;
+    padding: 7px;
+    border-radius: 5px;
+}
+
+.form {
+
+    display: grid;
+    grid-template-columns: 350px 150px 100px;
+    grid-template-rows: 100px;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+
+
+.form input[type="text"] {
+    grid-column-start: 1;
+    margin-right: 5px;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 10px;
+    font-family: 'Pixelify Sans', cursive;
+    font-family: 'Roboto', sans-serif;
+    border: 2px solid #A6E1FA;
+
+}
+
+.form input[type="date"] {
+    grid-column-start: 2;
+    margin-right: 5px;
+    padding: 10px;
+    font-size: 16px;
+    font-family: 'Pixelify Sans', cursive;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 10px;
+    border: 2px solid #A6E1FA;
+}
+
+.form button {
+
+    grid-column-start: 3;
+    padding: 8px 21px;
+    font-size: 16px;
+
+    font-family: 'Pixelify Sans', cursive;
+    font-family: 'Roboto', sans-serif;
+    background-color: #0e6ba8;
+    border-radius: 8px;
+    border: 2px solid #A6E1FA;
+    color: white;
+    cursor: pointer;
+
+
+}
+
+.card {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #0A2472;
+    color: white;
+    display: flex;
+    align-items: center;
+    font-family: 'Pixelify Sans', cursive;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    justify-content: space-between;
+    border: 2px solid #A6E1FA;
+    border-radius: 5px;
+}
+
+.card.completed {
+    background-color: #4CAF50;
+}
+
+.card.overdue {
+    background-color: #0E6BA8;
+}
+
+.card.not-completed {
+    background-color: #0A2472;
+
+}
+
+.task-checkbox {
+    margin-right: 10px;
+
+}
+
+.delete-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+.delete-button-icon {
+    color: white;
+    font-size: 16px;
+}
+
+.card.warning {
+    background-color: #0E6BA8;
+}
+
+
+
+.form button:hover {
+
+    background-color: aliceblue;
+    color: #0E6BA8;
+    font-weight: bold;
+    text-decoration: 3px underline #0A2472;
+    box-shadow: 1px 2px 2px #A6E1FA;
+}
+
+
+
+@media screen and (max-width: 700px) {
+
+    .input[type="date"] {
+        font-size: xx-small;
+
+    }
+
+    .form {
+        grid-template-columns: 250px 150px 100px;
+        margin-bottom: 10px;
+    }
+}
+
+
+@media screen and (max-width: 500px) {
+
+    .input[type="date"] {
+        font-size: xx-small;
+
+    }
+
+    .form {
+        grid-template-columns: 200px 80px 70px;
+        margin-bottom: 10px;
+    }
+}
